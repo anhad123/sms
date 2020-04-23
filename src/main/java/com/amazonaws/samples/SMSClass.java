@@ -56,10 +56,10 @@ public class SMSClass {
 					int responseCode2 = con2.getResponseCode();
 					System.out.println("inner Response Code "+responseCode2);
 					if(responseCode2!=404) {
-						BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIAJJ2YKDFFGSX6CJOQ", "Y+pOQVIsH82R9GBKr4SpTmt7+U1VUFRJ9DZtE1dr");
+						BasicAWSCredentials awsCreds = new BasicAWSCredentials("*", "*");
 						String SMSMessage = "Radhasoami, Login Enabled For E-Satsang Radhasoami";
 						String[] mobileList = {
-								"+919087772871","+919452290492","+918318160991","+919176745704","+919962388429","+919087772871"};
+								"*********"};
 						for(String mobile:mobileList) {
 							AmazonSNS snsClient = AmazonSNSClient
 									.builder()
@@ -77,7 +77,7 @@ public class SMSClass {
 						}
 
 
-						String[] mobileList2= {"+919841586929","+13108966180","+919566145196","+919314436433","+919087772871"};
+						String[] mobileList2= {"**"};
 						for(String mobile:mobileList2)
 						{
 							AmazonSNS snsClient = AmazonSNSClient
